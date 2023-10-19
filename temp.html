@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .navigation {
+            width: 100%;
+            background-color: white;
+            height: 75px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            margin: 20px 0 0 0;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            display: inline-block;
+            margin: 0 0 0 30px;
+            padding: 0;
+        }
+
+        .navigation ul li.active a {
+            font-style: italic;
+        }
+
+        .navigation ul li.blue {
+            border-bottom-color: #0071c5;
+        }
+
+        .navigation ul li.green {
+            border-bottom-color: #c4d600;
+        }
+
+        .navigation ul li.orange {
+            border-bottom-color: #fc4c02;
+        }
+
+        .navigation ul li.yellow {
+            border-bottom-color: #f3d54e;
+        }
+
+        .navigation ul li a:link,
+        .navigation ul li a:visited,
+        .navigation ul li a:active,
+        .navigation ul li a:hover,
+        .navigation ul li a:focus {
+            color: #333;
+            text-decoration: none;
+            padding-bottom: 10px;
+        }
+
+        .top-page {
+            margin-top: 75px;
+        }
+
+        .page {
+            min-height: 500px;
+        }
+
+        .page.blue {
+            background-color: #0071c5;
+        }
+
+        .page.green {
+            background-color: #c4d600;
+        }
+
+        .page.orange {
+            background-color: #fc4c02;
+        }
+
+        .page.yellow {
+            background-color: #f3d54e;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Scroll Spy -->
+    <script>
+        // Cache selectors
+        var lastId,
+            topMenu = $("#nav"),
+            topMenuHeight = topMenu.outerHeight() + 10,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            });
+
+        // Bind click handler to menu items
+        // so we can get a fancy scroll animation
+        menuItems.click(function (e) {
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 300);
+            if (!helpMenuDiv.classList.contains("hidden")) {
+                helpMenuDiv.classList.add("hidden");
+            }
+            e.preventDefault();
+        });
+
+        // Bind to scroll
+        $(window).scroll(function () {
+            // Get container scroll position
+            var fromTop = $(this).scrollTop() + topMenuHeight;
+
+            // Get id of current scroll item
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop)
+                    return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+                lastId = id;
+                // Set/remove active class
+                menuItems
+                    .parent().removeClass("font-bold border-yellow-600")
+                    .end().filter("[href='#" + id + "']").parent().addClass("font-bold border-yellow-600");
+            }
+        });
+
+    </script>
+</body>
+
+</html>

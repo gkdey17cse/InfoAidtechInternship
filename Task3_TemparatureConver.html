@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Info Aidtech Internship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&family=Satisfy&family=Sofia+Sans+Condensed:ital,wght@1,300&family=Urbanist&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-teal-300 to-fuchsia-300">
+
+    <div class="container mx-auto h-screen flex flex-col justify-center items-center px-4 py-3"
+        style="font-family: 'Urbanist', sans-serif;">
+
+        <div id="form" class="w-full md:3/5 xl:w-2/5 bg-white px-8 py-4 rounded-xl shadow-xl">
+            <div class="flex justify-center items-center">
+                <h1 class="text-center font-semibold tracking-wider text-4xl py-8 px-3"
+                    style="font-family: 'Sofia Sans Condensed', sans-serif;">Temparature Converter</h1>
+                <img src="/Image/Task31.jpg" class="w-16 px-2 py-3" alt="">
+            </div>
+
+            <div id="celsious" class="mb-6 grid grid-cols-6">
+                <input type="text" id="c" class="col-span-5  bg-transparent tracking-widest border text-gray-900 font-bold focus:ring-blue-500 focus:border-blue-500 
+                    block flex-1 min-w-0 w-full text-2xl text-center border-gray-600 px-4 py-2 rounded-lg"
+                    placeholder="Celsius (°C)">
+                <div class="flex justify-center w-full items-center">
+                    <span
+                        class="w-full text-center items-center px-3 py-4 text-xl text-white bg-gray-900 border border-r-0 border-gray-300 ">
+                        <p><sup>0</sup> C</p>
+                    </span>
+                </div>
+            </div>
+
+            <div id="fahrenheit" class="mb-6 grid grid-cols-6">
+                <input type="text" id="f" class="col-span-5  bg-transparent tracking-widest border text-gray-900 font-bold focus:ring-blue-500 focus:border-blue-500 
+                    block flex-1 min-w-0 w-full text-2xl text-center border-gray-600 px-4 py-2 rounded-lg"
+                    placeholder="Fahrenheit (°F)">
+                <div class="flex justify-center w-full items-center">
+                    <span
+                        class="w-full text-center items-center px-3 py-4 text-xl text-white bg-gray-900 border border-r-0 border-gray-300 ">
+                        <p><sup>0</sup> F</p>
+                    </span>
+                </div>
+            </div>
+
+            <div id="kelvin" class="mb-6 grid grid-cols-6">
+                <input type="text" id="k" class="col-span-5  bg-transparent tracking-widest border text-gray-900 font-bold focus:ring-blue-500 focus:border-blue-500 
+                    block flex-1 min-w-0 w-full text-2xl text-center border-gray-600 px-4 py-2 rounded-lg"
+                    placeholder="Kelvin (K)">
+                <div class="flex justify-center w-full items-center">
+                    <span
+                        class="w-full text-center items-center px-3 py-4 text-xl text-white bg-gray-900 border border-r-0 border-gray-300 ">
+                        <p>( K )</p>
+                    </span>
+                </div>
+            </div>
+
+            <button onclick=reset() type="button" class="mt-16 mb-8 block w-full text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-1 duration-150 focus:ring-blue-800 font-medium rounded-lg 
+                text-lg px-5 py-2 text-center ">Reset</button>
+
+        </div>
+
+        <h2 class="text-center text-md font-semibold tracking-widest my-2 px-4 py-2 mt-4">
+            <p>&copy; Gour Krishna Dey , 2023</p>
+        </h2>
+        <!-- Copyright end-->
+
+    </div>
+    <!-- Copyright -->
+
+
+    <script>
+
+        let celsious = document.getElementById('c');
+        let farenhit = document.getElementById('f');
+        let kelvin = document.getElementById('k');
+
+        function reset() {
+            celsious.value = '';
+            farenhit.value = '';
+            kelvin.value = '';
+        }
+
+        celsious.addEventListener('input', function () {
+            let ctemp = parseFloat(celsious.value);
+            let ktemp = ctemp + 273.15;
+            let ftemp = (ctemp * 9) / 5 + 32;
+
+            farenhit.value = ftemp;
+            kelvin.value = ktemp;
+        })
+
+        farenhit.addEventListener('input', function () {
+            let ftemp = parseFloat(farenhit.value);
+            let ktemp = ((ftemp - 32) * (5 / 9)) + 273.15;
+            let ctemp = (ftemp - 32) * (5 / 9);
+
+            celsious.value = ctemp;
+            kelvin.value = ktemp;
+        })
+
+        kelvin.addEventListener('input', function () {
+            let ktemp = parseFloat(kelvin.value);
+            let ctemp = ktemp - 273.15;
+            let ftemp = (ktemp - 273.15) * (9 / 5) + 32;
+
+            farenhit.value = ftemp;
+            celsious.value = ctemp;
+        })
+
+    </script>
+</body>
+
+</html>
