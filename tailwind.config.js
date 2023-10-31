@@ -5,6 +5,7 @@ module.exports = {
     "Task1_ProductLandingPage.html",
     "Task3_TemparatureConver.html",
     "Task4_Resturant_Home.html",
+    "Task4_Resturant_BookATable.html",
   ],
   theme: {
     extend: {},
