@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Urban Spice : Book A Table</title>
+    <title>Urban Spice : Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
 
@@ -38,24 +38,10 @@
 
     <style>
         .background {
-            background-image: url(./Image/Task4/R3.jfif);
+            background-image: url(./Image/Task4/bg_cover5.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             position: absolute;
-        }
-
-        input[type="date"]::-webkit-calendar-picker-indicator {
-            background-color: white;
-            padding: 1%;
-            border-radius: 45px;
-            color: orange;
-        }
-
-        input[type="time"]::-webkit-calendar-picker-indicator {
-            background-color: white;
-            padding: 1%;
-            border-radius: 45px;
-            color: orange;
         }
 
         .error {
@@ -86,9 +72,9 @@
                     <a href="./Task4_Resturant_Testimonials.html"
                         class="px-3 py-2 hover:text-orange-300 duration-500">Testimonials</a>
                     <a href="./Task4_Resturant_Contact.html"
-                        class="px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                        class="px-3 py-2 text-orange-300 duration-500 font-bold">Contact</a>
                     <a href="./Task4_Resturant_BookATable.html"
-                        class="px-3 py-2 text-orange-300 duration-500 font-bold">Reserve A Table</a>
+                        class="px-3 py-2 hover:text-orange-300 duration-500">Reserve A Table</a>
                 </nav>
 
 
@@ -107,7 +93,7 @@
                         <ul id="" class="text-sm font-medium text-gray-800 rounded-lg divide-y divide-gray-300"
                             aria-labelledby="dropdownDefaultButton">
                             <a href="./Task4_Resturant_Home.html"
-                                class="block px-3 py-2 text-orange-300 duration-500 font-bold">Home</a>
+                                class="block px-3 py-2 hover:text-orange-300 duration-500">Home</a>
                             <a href="./Task4_Resturant_Menu.html"
                                 class="block px-3 py-2 hover:text-orange-300 duration-500">Menu</a>
                             <a href="./Task4_Resturant_OrderNow.html"
@@ -119,7 +105,9 @@
                             <a href="./Task4_Resturant_Testimonials.html"
                                 class="block px-3 py-2 hover:text-orange-300 duration-500">Textimonials</a>
                             <a href="./Task4_Resturant_Contact.html"
-                                class="block px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                                class="block px-3 py-2 text-orange-300 duration-500 font-bold">Contact</a>
+                            <a href="./Task4_Resturant_BookATable.html"
+                                class="block px-3 py-2 hover:text-orange-300 duration-500">Reserve A Table</a>
                         </ul>
                     </div>
                 </div>
@@ -131,112 +119,76 @@
         <!-- Navigation Bar End -->
 
         <!-- Form -->
-        <div class="h-max  bg-gray-950 opacity-75">
+        <div class="h-max  bg-gray-950 bg-opacity-60" style="font-family: 'Urbanist', cursive;">
             <div class="">
                 <!-- Heading -->
-                <div class="container mx-auto flex items-center h-auto py-2 px-2" data-wow-duration="1s"
+                <div id="caption" class="container mx-auto flex items-center h-auto py-2 px-2" data-wow-duration="1s"
                     style="font-family: 'Satisfy', cursive;">
                     <hr class="flex-grow border-t border-orange-400">
 
                     <span class="px-3 py-8 text-transparent tracking-widest bg-clip-text bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 
                     text-2xl xl:text-4xl font-semibold">
-                        Reserve A Table at URBAN SPICE
+                        Remain in Touch
                     </span>
                     <hr class="flex-grow border-t border-orange-400">
                 </div>
                 <!-- Heading -->
 
                 <!-- h-auto -->
-                <div class="container xl:w-2/3 mx-auto text-white text-xs md:text-sm xl:text-base font-medium tracking-widest px-4 py-1"
+                <div id="contactform"
+                    class="container xl:w-3/5 mx-auto text-white text-xs md:text-sm xl:text-base font-medium tracking-widest px-4 py-1"
                     style="font-family: 'Urbanist', sans-serif;">
                     <form id="reservation" action="" method="get" class="px-2 py-1.5">
-                        <!-- Name Section -->
+                        <!-- Name & Email Section -->
                         <div class="md:grid md:grid-cols-2 gap-5">
                             <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="fname">First Name <span>*</span></label>
-                                <input type="text" name="fname" id="fname" placeholder="Enter First Name (Ex - John)"
+                                <label class="font-semibold" for="name">Name <span>*</span></label>
+                                <input type="text" name="name" id="name" placeholder="Enter Name (Ex - Johnny Depp)"
                                     class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400 placeholder:font-medium placeholder:text-white placeholder:tracking-wider">
                             </div>
                             <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="lname">Last Name <span>*</span></label>
-                                <input type="text" name="lname" id="lname" placeholder="Enter Surname (Ex - Dey)"
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400 placeholder:font-medium placeholder:text-white placeholder:tracking-wider">
-                            </div>
-                        </div>
-                        <!-- Name Section -->
-                        <!-- Contact Section -->
-                        <div class="md:grid md:grid-cols-2 gap-5 mt-4">
-                            <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="mobile">Contact Number <span>*</span></label>
-                                <input type="text" name="mobile" id="mobile"
-                                    placeholder="Your Phone Number (Ex - 1800 200 3655 9874)"
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400 placeholder:font-medium placeholder:text-white placeholder:tracking-wider">
-                            </div>
-                            <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="email">Email Address <span>*</span></label>
+                                <label class="font-semibold" for="email">Email <span>*</span></label>
                                 <input type="email" name="email" id="email"
-                                    placeholder="Your Email Address (Ex - abc@cde.xyz)"
+                                    placeholder="Email Address (Ex - abc@yahoo.edu)"
                                     class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400 placeholder:font-medium placeholder:text-white placeholder:tracking-wider">
                             </div>
                         </div>
-                        <!-- Contact Section -->
-                        <!-- Date & Time -->
-                        <div class="md:grid md:grid-cols-2 gap-5 mt-4">
-                            <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="mobile">Date of Reservation <span>*</span></label>
-                                <input type="date" name="date" id="date" placeholder="MM/DD/YYYY"
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400">
-                            </div>
-                            <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="time">Preferred Dining Time <span>*</span></label>
-                                <input type="time" name="time" id="time" placeholder=""
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400">
-                            </div>
-                        </div>
-                        <!-- Date & Time -->
-                        <!-- No of Guests -->
-                        <div class=" gap-5 mt-4">
-                            <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="guest">Number of Guests <span>*</span></label>
-                                <input type="number" name="guest" id="guest" placeholder="" min="1" value="1"
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400">
-                            </div>
-                        </div>
-                        <!-- No of Guests -->
+                        <!-- Name & Email Section -->
+
                         <!-- Instructions -->
                         <div class=" gap-5 mt-4">
                             <div class="px-2 py-1 flex flex-col justify-center items-start gap-2 ">
-                                <label class="font-semibold" for="instructions">Special Requests</label>
-                                <textarea rows="3" type="text" name="instructions" id="instructions"
-                                    placeholder="Any Special Requests or Dietary Restrictions"
-                                    class="w-full bg-transparent px-4 py-2.5 rounded-md border-2 border-orange-400"></textarea>
+                                <label class="font-semibold" for="messege">Your Messege <span>*</span></label>
+                                <textarea rows="3" type="text" name="messege" id="messege"
+                                    placeholder="Your Feedback and Suggestions"
+                                    class="w-full bg-transparent px-4 py-2.5 placeholder:tracking-wider placeholder:text-white rounded-md border-2 border-orange-400"></textarea>
 
                             </div>
                         </div>
                         <!-- Instructions -->
-
-                        <!-- T&C -->
-                        <p class="my-4">
-                        <h5 class="text-amber-200 text-sm tracking-widest"> &bull;&nbsp; Reservation is subject to
-                            availability.</h5>
-                        <h5 class="text-amber-200 text-sm tracking-widest"> &bull;&nbsp; We may contact you to confirm
-                            your reservation.</h5>
-                        <h5 class="text-amber-200 text-sm tracking-widest"> &bull;&nbsp; Your table will be held for 15
-                            minutes past the reservation time.</h5>
-                        <h5 class="text-amber-200 text-sm tracking-widest"> &bull;&nbsp; For same-day reservations, call
-                            us directly.</h5>
-                        <h5 class="text-amber-200 text-sm tracking-widest"> &bull;&nbsp; Minimum spend or group size
-                            requirements may apply.</h5>
-                        </p>
-                        <!-- T&C -->
 
                         <!-- Button -->
                         <div class="flex justify-center items-center my-8 px-2 py-3">
                             <button type="submit" class="px-4 py-2.5 w-1/2 text-lg text-white font-semibold tracking-widest bg-gradient-to-r from-orange-400 via-amber-500 to-orange-500 
-                active:translate-x-2 active:translate-y-2 duration-300">Book Your Table Now!</button>
+                active:translate-x-2 active:translate-y-2 duration-300">Send</button>
                         </div>
                         <!-- Button -->
                     </form>
+                </div>
+
+                <div id="feedback" class="hidden container mx-auto flex justify-center items-center xl:w-2/5 px-2 py-4"
+                    style="height: 500px;">
+                    <div class="flex flex-col justify-center items-center gap-6 px-4 py-8 text-white">
+                        <h2 class="text-3xl xl:text-5xl font-bold tracking-widest justify-center">Thank You For Contact
+                            Us</h2>
+                        <h4 class="text-xl xl:text-2xl font-semibold tracking-widest text-center leading-loose">Our team
+                            will
+                            carefully review your
+                            message and respond promptly. Your input is instrumental in shaping our restaurant's
+                            offerings and service.</h4>
+                        <p class="text-base xl:text-xl text-center  font-medium tracking-widest ">With gratitude,<br>
+                            The Urban Spice Team</p>
+                    </div>
                 </div>
             </div>
 
@@ -414,66 +366,50 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
     <script>
-        jQuery.validator.addMethod("phoneIndia", function (phone_number, element) {
-            phone_number = phone_number.replace(/\s+/g, "");
-            return this.optional(element) || phone_number.length > 9 &&
-                phone_number.match(/^(\+?1-?)?(\([2-9]\d{2}\)|[2-9]\d{2})-?[2-9]\d{2}-?\d{4}$/);
-        }, "Please specify a valid phone number");
 
         $("#reservation").validate({
             rules: {
-                fname: {
+                name: {
                     required: true,
                     minlength: 2,
                 },
-                lname: {
+                messege: {
                     required: true,
-                    minlength: 2,
-                },
-                mobile: {
-                    required: true,
-                    phoneIndia: true,
+                    minlength: 5,
                 },
                 email: {
                     required: true,
                     email: true,
                 },
-                date: "required",
-                time: "required",
-                guest: "required",
             },
             messages: {
-                fname: {
+                name: {
                     required: "First Name is Required",
                     minlength: "Name Must have atleast 2 Characters",
                 },
-                lname: {
-                    required: "Surname is Required",
-                    minlength: "Name Must have atleast 2 Characters",
-                },
-                mobile: {
-                    required: "Phone Number is Required",
-                    phoneIndia: "Enter a Valid Phone Number",
+                messege: {
+                    required: "Messege Can't be Empty",
+                    minlength: "Messege Must have atleast 5 Characters",
                 },
                 email: {
                     required: "Email address is Required",
                     email: "Enter a Valid Email Address",
                 },
-                date: {
-                    required: "Please Select Date for Reservation",
-                },
-                time: {
-                    required: "Please Select Time for Reservation",
-                },
-                guest: {
-                    required: "Please Enter Number of Guests",
-                },
             },
 
 
             submitHandler: function (form) {
-                alert(`Thank you for choosing Urban Spice!
-                    Your reservation request has been received.We will review your details and get back to you shortly to confirm your reservation.If you have any urgent inquiries or changes to your booking, please contact us directly at (+91) 1800 255 369 1588.We look forward to serving you and making your dining experience exceptional!`);
+
+                caption = document.getElementById('caption').classList;
+                contactform = document.getElementById('contactform').classList;
+                feedback = document.getElementById('feedback').classList;
+
+                caption.add("hidden");
+                contactform.add("hidden");
+                feedback.remove("hidden");
+
+                alert('For further details call +(91) 1800 254 369875');
+
                 form.submit();
             }
 

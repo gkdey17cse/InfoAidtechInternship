@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +42,7 @@
         <div
             class="container mx-auto flex flex-wrap justify-between lg:justify-center gap-4 px-5 py-1.5 flex-row items-center">
             <a class="flex title-font font-medium items-center">
-                <img src="/Image/Task4/Logo.png" alt="" class="w-80 py-1">
+                <img src="./Image/Task4/Logo.png" alt="" class="w-80 py-1">
             </a>
             <nav id="nav"
                 class="hidden  md:ml-auto md:mr-auto lg:flex flex-wrap items-center text-lg justify-center text-white uppercase">
@@ -49,10 +50,12 @@
                 <a href="./Task4_Resturant_Menu.html" class="px-3 py-2 text-orange-300 duration-500 font-bold ">Menu</a>
                 <a href="./Task4_Resturant_OrderNow.html" class="px-3 py-2 hover:text-orange-300 duration-500">Order
                     Now</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">About</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Blog</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Testimonials</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                <a href="./Task4_Resturant_About.html" class="px-3 py-2 hover:text-orange-300 duration-500">About</a>
+                <a href="./Task4_Resturant_FAQs.html" class="px-3 py-2 hover:text-orange-300 duration-500">FAQs</a>
+                <a href="./Task4_Resturant_Testimonials.html"
+                    class="px-3 py-2 hover:text-orange-300 duration-500">Testimonials</a>
+                <a href="./Task4_Resturant_Contact.html"
+                    class="px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
             </nav>
 
             <a href="./Task4_Resturant_BookATable.html"
@@ -76,15 +79,21 @@
                     <ul id="" class="text-sm font-medium text-gray-800 rounded-lg divide-y divide-gray-300"
                         aria-labelledby="dropdownDefaultButton">
                         <a href="./Task4_Resturant_Home.html"
-                            class="block px-3 py-2 text-orange-300 duration-500 font-bold">Home</a>
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Home</a>
                         <a href="./Task4_Resturant_Menu.html"
-                            class="block px-3 py-2 hover:text-orange-300 duration-500">Menu</a>
+                            class="block px-3 py-2 text-orange-300 duration-500 font-bold">Menu</a>
                         <a href="./Task4_Resturant_OrderNow.html"
                             class="block px-3 py-2 hover:text-orange-300 duration-500">Order Now</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">About</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Blog</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Textimonials</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                        <a href="./Task4_Resturant_About.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">About</a>
+                        <a href="./Task4_Resturant_FAQs.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">FAQs</a>
+                        <a href="./Task4_Resturant_Testimonials.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Textimonials</a>
+                        <a href="./Task4_Resturant_Contact.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                        <a href="./Task4_Resturant_BookATable.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Reserve A Table</a>
                     </ul>
                 </div>
             </div>
@@ -95,7 +104,7 @@
     </header>
     <!-- Navigation Bar End -->
 
-    <!-- Craausel section -->
+    <!-- Carausel section -->
     <div class="w-full mx-auto -z-10 h-3/4">
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -1658,30 +1667,30 @@
     <!-- Online Order -->
 
     <!-- Footer -->
-    <footer class="bg-gray-800 mt-12" style="font-family: 'Satisfy', cursive;">
+    <footer class="bg-gray-900 py-8" style="font-family: 'Satisfy', cursive;">
         <div class="container mx-auto px-2 py-8">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 px-2 py-3">
                 <!-- Company -->
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Company ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xl"
+                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-xl"
                         style="font-family: 'Urbanist', sans-serif;">
                         <!-- <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Service</span></a> -->
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Menu</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Order
+                        <a href="./Task4_Resturant_Menu.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                            <span>Menu</span></a>
+                        <a href="./Task4_Resturant_OrderNow.html" class="hover:tracking-wider duration-150">&rArr;
+                            &nbsp; <span>Order
                                 Now</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                        <a href="./Task4_Resturant_About.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
                             <span>About</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Customer
+                        <a href="./Task4_Resturant_Testimonials.html" class="hover:tracking-wider duration-150">&rArr;
+                            &nbsp; <span>Customer
                                 Feedback</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Reserve A
+                        <a href="./Task4_Resturant_BookATable.html" class="hover:tracking-wider duration-150">&rArr;
+                            &nbsp; <span>Reserve A
                                 Table</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
-                            <span>Blogs</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Privacy
-                                Policy</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Terms &
-                                Condition</span></a>
+                        <a href="./Task4_Resturant_FAQs.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                            <span>FAQs</span></a>
                     </div>
                 </div>
 
@@ -1689,7 +1698,7 @@
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Contact ____</h3>
 
-                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-lg"
+                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-lg"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="flex justify-start items-center gap-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -1752,7 +1761,7 @@
                 <!-- Opening -->
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Opening ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-lg"
+                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-xs md:text-base xl:text-lg"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="tracking-wider">
                             <h3 class="py-1 font-semibold">MONDAY - SATURDAY</h3>
@@ -1767,16 +1776,17 @@
 
                 <!-- Opening -->
                 <div class="px-2 py-1 ">
-                    <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Newsletter ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-lg"
+                    <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Newsletter ____
+                    </h3>
+                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-xs md:text-base xl:text-xl"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="tracking-wider">
-                            <p class="py-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                                fuga rerum
+                            <p class="py-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus fuga rerum
                                 expedita deleniti consequuntur delectus?</p>
                         </div>
 
-                        <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xl"
+                        <!-- <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-xl"
                             style="font-family: 'Urbanist', sans-serif;">
                             <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
                                 <span>FAQs</span></a>
@@ -1785,8 +1795,8 @@
                             <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
                                 <span>Cookies/span></a>
                             <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
-                                <span>Blogs</span></a>
-                        </div>
+                                <span>FAQs</span></a>
+                        </div> -->
 
                     </div>
                 </div>
@@ -1794,10 +1804,10 @@
             </div>
 
             <!-- Heading -->
-            <div class="flex flex-col items-center h-auto mt-6 flex-grow border-t-2 border-orange-400"
+            <div class="flex flex-col items-center h-auto mt-2 flex-grow border-t-2 border-orange-400"
                 style="font-family: 'Urbanist', cursive;">
                 <div
-                    class="flex mt-2 mx-3 tracking-wider justify-between items-center space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24  xl:space-x-52">
+                    class="flex flex-col lg:flex-row mt-2 mx-3 pt-2 tracking-wider gap-2 lg:gap-12 justify-center lg:justify-between items-center text-gray-200 text-xs md:text-base xl:text-xl">
                     <p>@ Copyright <strong>URBAN SPICE </strong>All Rights Reserved</p>
                     <p>Designed by <span class="text-orange-400">GOUR KRISHNA DEY</span></p>
                 </div>

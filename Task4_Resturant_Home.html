@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Product Landing Page : GadgetBazaar</title>
+    <title>Urban Spice : Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,17 +41,19 @@
         <div
             class="container mx-auto flex flex-wrap justify-between lg:justify-center gap-4 px-5 py-1.5 flex-row items-center">
             <a class="flex title-font font-medium items-center">
-                <img src="/Image/Task4/Logo.png" alt="" class="w-80 py-1">
+                <img src="./Image/Task4/Logo.png" alt="" class="w-80 py-1">
             </a>
             <nav id="nav"
                 class="hidden  md:ml-auto md:mr-auto lg:flex flex-wrap items-center text-lg justify-center text-white uppercase">
                 <a href="./Task4_Resturant_Home.html" class="px-3 py-2 text-orange-300 duration-500 font-bold">Home</a>
                 <a href="./Task4_Resturant_Menu.html" class="px-3 py-2 hover:text-orange-300 duration-500">Menu</a>
-                <a href="./Task4_Resturant_OrderNow.html" class="px-3 py-2 hover:text-orange-300 duration-500">Order Now</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">About</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Blog</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Testimonials</a>
-                <a href="#" class="px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                <a href="./Task4_Resturant_OrderNow.html" class="px-3 py-2 hover:text-orange-300 duration-500">Order
+                    Now</a>
+                <a href="./Task4_Resturant_About.html" class="px-3 py-2 hover:text-orange-300 duration-500">About</a>
+                <a href="./Task4_Resturant_FAQs.html" class="px-3 py-2 hover:text-orange-300 duration-500">FAQs</a>
+                <a href="./Task4_Resturant_Testimonials.html"
+                    class="px-3 py-2 hover:text-orange-300 duration-500">Testimonials</a>
+                <a href="Task4_Resturant_Contact.html" class="px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
             </nav>
 
             <a href="./Task4_Resturant_BookATable.html"
@@ -72,13 +76,22 @@
                 <div id="dropdown" class="z-10 hidden bg-gray-100  rounded-lg shadow w-40 mr-4">
                     <ul id="" class="text-sm font-medium text-gray-800 rounded-lg divide-y divide-gray-300"
                         aria-labelledby="dropdownDefaultButton">
-                        <a href="./Task4_Resturant_Home.html" class="block px-3 py-2 text-orange-300 duration-500 font-bold">Home</a>
-                        <a href="./Task4_Resturant_Menu.html" class="block px-3 py-2 hover:text-orange-300 duration-500">Menu</a>
-                        <a href="./Task4_Resturant_OrderNow.html" class="block px-3 py-2 hover:text-orange-300 duration-500">Order Now</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">About</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Blog</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Textimonials</a>
-                        <a href="#" class="block px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                        <a href="./Task4_Resturant_Home.html"
+                            class="block px-3 py-2 text-orange-300 duration-500 font-bold">Home</a>
+                        <a href="./Task4_Resturant_Menu.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Menu</a>
+                        <a href="./Task4_Resturant_OrderNow.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Order Now</a>
+                        <a href="./Task4_Resturant_About.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">About</a>
+                        <a href="./Task4_Resturant_FAQs.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">FAQs</a>
+                        <a href="./Task4_Resturant_Testimonials.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Textimonials</a>
+                        <a href="./Task4_Resturant_Contact.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Contact</a>
+                            <a href="./Task4_Resturant_BookATable.html"
+                            class="block px-3 py-2 hover:text-orange-300 duration-500">Reserve A Table</a>
                     </ul>
                 </div>
             </div>
@@ -93,14 +106,16 @@
     <div class="mx-auto bg-transparent" style="font-family: 'Urbanist', sans-serif;">
         <!-- Hero -->
         <div class="">
-            <img src="./Image/Task4/Bg_Cover_new.png" class="hidden lg:block absolute lg:w-screen -z-10 bg-cover"
+          
+            <img src="./Image/Task4/Bg_Cover_new.png" class="block absolute lg:w-screen -z-10 bg-cover"
                 style="height: 750px;" alt="Image alt text" />
 
 
-            <div class="mx-auto flex py-4 px-4 lg:bg-gray-900 lg:bg-opacity-60 text-gray-800 lg:text-white text-center "
+            <div class="mx-auto flex py-4 px-4 bg-gray-900 bg-opacity-60 text-gray-800 text-white text-center "
                 style="height: 750px;">
                 <div class="container mx-auto w-full flex flex-col justify-around gap-4 mt-2 ">
-                    <div class="flex flex-col justify-center items-center px-2 py-1 gap-6 animate__animated animate__fadeInLeftBig animate__slow">
+                    <div
+                        class="flex flex-col justify-center items-center px-2 py-1 gap-6 animate__animated animate__fadeInLeftBig animate__slow">
                         <h1 class="text-3xl md:text-4xl" style="font-family: 'Satisfy', cursive;">Welcome to Urban Spice
                         </h1>
                         <h3 class="text-2xl md:text-3xl font-medium tracking-wider"
@@ -108,10 +123,13 @@
                             ! Savor the Fusion of Culinary Excellence in Every Bite !</h3>
                     </div>
                     <div class="flex justify-center">
-                        <img src="/Image/Task4/Bg_Chef.png" alt="" class="w-3/4 md:w-1/2 lg:w-1/4 px-2 py-2 animate__animated animate__tada animate__delay-2s">
+                        <img src="/Image/Task4/Bg_Chef.png" alt=""
+                            class="w-3/4 md:w-1/2 lg:w-1/4 px-2 py-2 animate__animated animate__tada animate__delay-2s">
 
                     </div>
-                    <p class="tracking-wider text-base md:text-lg font-medium animate__animated animate__fadeInRightBig animate__slow">Discover a world of delectable cuisine
+                    <p
+                        class="tracking-wider text-base md:text-lg font-medium animate__animated animate__fadeInRightBig animate__slow">
+                        Discover a world of delectable cuisine
                         that's as
                         vibrant and diverse as the city itself. At Urban
                         Spice, we take pride in blending the rich traditions of the culinary world with the modern,
@@ -129,7 +147,8 @@
     <div class="bg-gray-100 py-20">
         <div class="container mx-auto px-2 py-2 my-4 lg:my-16" style="font-family: 'Fira Sans', sans-serif;">
             <!-- Heading -->
-            <div class="flex items-center h-auto wow bounceInUp" data-wow-duration="1s" style="font-family: 'Satisfy', cursive;">
+            <div class="flex items-center h-auto wow bounceInUp" data-wow-duration="1s"
+                style="font-family: 'Satisfy', cursive;">
                 <span
                     class="px-3 py-8 text-transparent bg-clip-text bg-gradient-to-b from-orange-400 via-amber-400 to-orange-500 text-5xl font-semibold">
                     What We Offers
@@ -141,7 +160,8 @@
             <div class="grid grid-cols-2 xl:grid-cols-4 gap-6 md:gap-9 px-2 md:px-4 py-3 mt-16 text-xs md:text-base">
                 <!-- Row 1 -->
                 <div data-wow-duration="2s"
-                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 -mt-8 mb-8 wow animate__fadeInUp" data-wow-delay="1s">
+                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 -mt-8 mb-8 wow animate__fadeInUp"
+                    data-wow-delay="1s">
                     <img src="Image/Task4/About_Chef.png" alt="" class="w-auto p-2 ">
                     <h3 class="p-1.5 text-xl font-extrabold tracking-wider text-gray-900"
                         style="font-family: 'Raleway', sans-serif;">
@@ -170,7 +190,8 @@
                 </div>
 
                 <div data-wow-duration="2s"
-                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 -mt-8 mb-8 wow animate__fadeInUp" data-wow-delay="1s">
+                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 -mt-8 mb-8 wow animate__fadeInUp"
+                    data-wow-delay="1s">
                     <img src="Image/Task4/About_247.png" alt="" class="w-auto p-2 ">
                     <h3 class="p-1.5 text-xl font-extrabold tracking-wider text-gray-900"
                         style="font-family: 'Raleway', sans-serif;">
@@ -210,8 +231,8 @@
                     </p>
                 </div>
 
-                <div
-                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 mt-8 -mb-8 wow fadeInUp" data-wow-duration="2s">
+                <div class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 mt-8 -mb-8 wow fadeInUp"
+                    data-wow-duration="2s">
                     <img src="Image/Task4/About_Party.png" alt="" class="w-auto p-4 ">
                     <h3 class="p-1.5 text-xl font-extrabold tracking-wider text-gray-900"
                         style="font-family: 'Raleway', sans-serif;">
@@ -233,8 +254,8 @@
                         food drives. Join us in making a positive impact together.</p>
                 </div>
 
-                <div
-                    class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 mt-8 -mb-8 wow fadeInUp" data-wow-duration="2s">
+                <div class="bg-white shadow-xl flex flex-col justify-center items-center px-3 py-4 text-justify hover:scale-105 duration-300 mt-8 -mb-8 wow fadeInUp"
+                    data-wow-duration="2s">
                     <img src="Image/Task4/About_ContactFeedback.png" alt="" class="w-auto p-4 ">
                     <h3 class="p-1.5 text-xl font-extrabold tracking-wider text-gray-900"
                         style="font-family: 'Raleway', sans-serif;">
@@ -792,23 +813,27 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div class="grid grid-flow-row grid-rows-3 px-2 py-4">
                         <img src="./Image/Task4/R1.jpg" alt=""
-                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig" data-wow-delay="0.5s">
+                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig"
+                            data-wow-delay="0.5s">
                         <img src="./Image/Task4/R2.jpg" alt=""
-                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-br-xl rounded-tl-xl wow fadeInLeftBig" data-wow-delay="0.5s">
+                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-br-xl rounded-tl-xl wow fadeInLeftBig"
+                            data-wow-delay="0.5s">
                         <img src="./Image/Task4/R3.jfif" alt=""
-                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig" data-wow-delay="0.5s">
+                            class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig"
+                            data-wow-delay="0.5s">
                     </div>
                     <div class="grid grid-rows-3">
                         <div class="row-span-3 flex justify-center items-center">
                             <img src="./Image/Task4/R4.jfif" alt=""
-                                class=" shadow-xl lg:hover:translate-y-2 duration-300 rounded-tr-full wow fadeInLeftBig" data-wow-delay="0.5s">
+                                class=" shadow-xl lg:hover:translate-y-2 duration-300 rounded-tr-full wow fadeInLeftBig"
+                                data-wow-delay="0.5s">
                         </div>
                     </div>
                 </div>
 
                 <!-- col2 2 -->
-                <div class="flex flex-col gap-2 justify-center items-center px-4 py-4 wow fadeInRightBig" data-wow-delay="0.5s"
-                    style="font-family: 'Urbanist', sans-serif;">
+                <div class="flex flex-col gap-2 justify-center items-center px-4 py-4 wow fadeInRightBig"
+                    data-wow-delay="0.5s" style="font-family: 'Urbanist', sans-serif;">
 
                     <div class="flex flex-row items-center justify-center tracking-widest gap-1.5 px-2 py-1 text-2xl md:text-3xl font-medium"
                         style="font-family: 'Roboto', sans-serif;">
@@ -938,13 +963,6 @@
         </div>
         <!-- second Blog -->
 
-        <!-- Button -->
-        <div class="flex justify-end mx-6 my-2 ">
-            <button
-                class="justify-self-end hover:scale-105 duration-300 active:translate-x-2 active:translate-y-2 block w-auto px-10 py-3 text-white tracking-wider font-semibold bg-gradient-to-b from-orange-400 via-amber-600 to-orange-500">READ
-                MORE</button>
-        </div>
-        <!-- Button -->
 
     </div>
     <!-- Blogs End -->
@@ -1062,27 +1080,27 @@
     <!-- Cntact Us -->
 
     <!-- Footer -->
-    <footer class="bg-gray-800 mt-12" style="font-family: 'Satisfy', cursive;">
+    <footer class="bg-gray-900 py-8" style="font-family: 'Satisfy', cursive;">
         <div class="container mx-auto px-2 py-8">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 px-2 py-3">
                 <!-- Company -->
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Company ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xl"
+                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-xl"
                         style="font-family: 'Urbanist', sans-serif;">
                         <!-- <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Service</span></a> -->
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Menu</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Order Now</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>About</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Customer
+                        <a href="./Task4_Resturant_Menu.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                            <span>Menu</span></a>
+                        <a href="./Task4_Resturant_OrderNow.html" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Order
+                                Now</span></a>
+                        <a href="./Task4_Resturant_About.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                            <span>About</span></a>
+                        <a href="./Task4_Resturant_Testimonials.html" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Customer
                                 Feedback</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Reserve A
+                        <a href="./Task4_Resturant_BookATable.html" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Reserve A
                                 Table</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Blogs</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Privacy
-                                Policy</span></a>
-                        <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Terms &
-                                Condition</span></a>
+                        <a href="./Task4_Resturant_FAQs.html" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                            <span>FAQs</span></a>
                     </div>
                 </div>
 
@@ -1090,7 +1108,7 @@
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Contact ____</h3>
 
-                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-lg"
+                    <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-lg"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="flex justify-start items-center gap-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -1153,7 +1171,7 @@
                 <!-- Opening -->
                 <div class="px-2 py-1 ">
                     <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Opening ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-lg"
+                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-xs md:text-base xl:text-lg"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="tracking-wider">
                             <h3 class="py-1 font-semibold">MONDAY - SATURDAY</h3>
@@ -1168,21 +1186,27 @@
 
                 <!-- Opening -->
                 <div class="px-2 py-1 ">
-                    <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Newsletter ____</h3>
-                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-lg"
+                    <h3 class="text-2xl font-semibold tracking-wider text-orange-400 py-1">Newsletter ____
+                    </h3>
+                    <div class="flex flex-col justify-center items-start gap-2 text-white py-3 text-xs md:text-base xl:text-xl"
                         style="font-family: 'Urbanist', sans-serif;">
                         <div class="tracking-wider">
-                            <p class="py-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fuga rerum
+                            <p class="py-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Ducimus fuga rerum
                                 expedita deleniti consequuntur delectus?</p>
                         </div>
 
-                        <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xl"
+                        <!-- <div class="flex flex-col justify-center items-start gap-3 text-white py-3 text-xs md:text-base xl:text-xl"
                             style="font-family: 'Urbanist', sans-serif;">
-                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>FAQs</span></a>
-                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Help</span></a>
-                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Cookies/span></a>
-                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp; <span>Blogs</span></a>
-                        </div>
+                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                                <span>FAQs</span></a>
+                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                                <span>Help</span></a>
+                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                                <span>Cookies/span></a>
+                            <a href="" class="hover:tracking-wider duration-150">&rArr; &nbsp;
+                                <span>FAQs</span></a>
+                        </div> -->
 
                     </div>
                 </div>
@@ -1190,10 +1214,10 @@
             </div>
 
             <!-- Heading -->
-            <div class="flex flex-col items-center h-auto mt-6 flex-grow border-t-2 border-orange-400"
+            <div class="flex flex-col items-center h-auto mt-2 flex-grow border-t-2 border-orange-400"
                 style="font-family: 'Urbanist', cursive;">
                 <div
-                    class="flex mt-2 mx-3 tracking-wider justify-between items-center space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24  xl:space-x-52">
+                    class="flex flex-col lg:flex-row mt-2 mx-3 pt-2 tracking-wider gap-2 lg:gap-12 justify-center lg:justify-between items-center text-gray-200 text-xs md:text-base xl:text-xl">
                     <p>@ Copyright <strong>URBAN SPICE </strong>All Rights Reserved</p>
                     <p>Designed by <span class="text-orange-400">GOUR KRISHNA DEY</span></p>
                 </div>
