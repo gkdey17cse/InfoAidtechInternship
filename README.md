@@ -1,5 +1,3 @@
-Certainly! Here's a top-level introduction for your Info Aidtech GitHub repository:
-
 **Info Aidtech Internship Repository**
 
 Welcome to my Info Aidtech Internship Repository, where I've compiled a diverse range of projects that showcase my journey in web development and software engineering. Each project represents a unique challenge and opportunity for growth, making this repository a testament to my dedication and passion for coding.
@@ -16,4 +14,4 @@ Welcome to my Info Aidtech Internship Repository, where I've compiled a diverse 
 
 As you explore this repository, you'll gain insight into my coding capabilities and the breadth of my technical skills. I invite you to delve into each project, review the code, and witness the dedication I've poured into making each project a reflection of my journey in the field of web development.
 
-Thank you for visiting, and I hope you find inspiration in these projects as I continue to learn and grow in the world of technology and software development.
+Thank you for visiting, and I hope you find inspiration in these projects as I continue to learn and grow in the world of web technology and software development.
